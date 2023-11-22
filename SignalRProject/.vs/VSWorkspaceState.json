@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SignalRDtoLayer",
+    "\\SignalR.BusinessLayer",
+    "\\SignalRApi",
+    "\\SignalRApi\\Mapping",
     "\\SignalRDtoLayer\\TestimonialDto"
   ],
-  "SelectedNode": "\\SignalRDtoLayer\\TestimonialDto\\CreateTestimonialDto.cs",
+  "SelectedNode": "\\SignalRApi\\Mapping\\TestimonialMapping.cs",
   "PreviewInSolutionExplorer": false
 }

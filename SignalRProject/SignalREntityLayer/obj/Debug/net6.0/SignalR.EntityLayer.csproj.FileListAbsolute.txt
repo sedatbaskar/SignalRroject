@@ -9,3 +9,15 @@ C:\Users\sedat\source\repos\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\S
 C:\Users\sedat\source\repos\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\refint\SignalR.EntityLayer.dll
 C:\Users\sedat\source\repos\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.pdb
 C:\Users\sedat\source\repos\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\ref\SignalR.EntityLayer.dll
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\bin\Debug\net6.0\SignalR.EntityLayer.deps.json
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\bin\Debug\net6.0\SignalR.EntityLayer.dll
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\bin\Debug\net6.0\SignalR.EntityLayer.pdb
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.AssemblyInfo.cs
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.sourcelink.json
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.dll
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\refint\SignalR.EntityLayer.dll
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.pdb
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\ref\SignalR.EntityLayer.dll
