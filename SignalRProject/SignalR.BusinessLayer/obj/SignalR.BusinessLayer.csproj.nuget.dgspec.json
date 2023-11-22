@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj": {}
+    "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj": {
+    "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj",
         "projectName": "SignalR.BusinessLayer",
-        "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\sedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj"
+              "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj": {
+    "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj",
         "projectName": "SignalR.DataAccessLayer",
-        "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.DataAccessLayer\\SignalR.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\sedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -87,8 +87,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj"
+              "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj": {
+    "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
         "projectName": "SignalR.EntityLayer",
-        "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
+        "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
         "packagesPath": "C:\\Users\\sedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sedat\\AppData\\Roaming\\NuGet\\NuGet.Config",

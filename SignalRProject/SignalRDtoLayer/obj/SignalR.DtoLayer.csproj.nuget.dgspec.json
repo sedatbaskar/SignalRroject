@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj": {}
+    "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj": {
+    "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj",
+        "projectUniqueName": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj",
         "projectName": "SignalR.DtoLayer",
-        "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj",
+        "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRDtoLayer\\SignalR.DtoLayer.csproj",
         "packagesPath": "C:\\Users\\sedat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRDtoLayer\\obj\\",
+        "outputPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRDtoLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sedat\\AppData\\Roaming\\NuGet\\NuGet.Config",

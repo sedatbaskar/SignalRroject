@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CWhstnGUrkTkMxGdH6HcOWgvec34gQzWItRS8IjYoN/wPBZ1ynqYIzL5R9jl0S7ujmsidSCNVcvXZ40MmgmfYA==",
+  "dgSpecHash": "/ZidxTB80qmKCF0a8FiAgb4rsYzSb83hpdpNoJA7CCdrEIsRuQpKb75WJeOWKMHqMnPETTnEbxqnyXu84A3dgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalR.BusinessLayer\\SignalR.BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sedat\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\sedat\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

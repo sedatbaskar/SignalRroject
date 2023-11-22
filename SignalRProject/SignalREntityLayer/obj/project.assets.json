@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
       "projectName": "SignalR.EntityLayer",
-      "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
+      "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\SignalR.EntityLayer.csproj",
       "packagesPath": "C:\\Users\\sedat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalREntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalREntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sedat\\AppData\\Roaming\\NuGet\\NuGet.Config",

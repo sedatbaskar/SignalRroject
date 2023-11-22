@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRwebUI\\SignalR.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\SignalR.WebUI.csproj",
       "projectName": "SignalR.WebUI",
-      "projectPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRwebUI\\SignalR.WebUI.csproj",
+      "projectPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\SignalR.WebUI.csproj",
       "packagesPath": "C:\\Users\\sedat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sedat\\source\\repos\\SignalRProject\\SignalRwebUI\\obj\\",
+      "outputPath": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sedat\\AppData\\Roaming\\NuGet\\NuGet.Config",
