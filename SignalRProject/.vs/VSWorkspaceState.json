@@ -4,8 +4,9 @@
     "\\SignalR.BusinessLayer",
     "\\SignalRApi",
     "\\SignalRApi\\Mapping",
+    "\\SignalRDtoLayer",
     "\\SignalRDtoLayer\\TestimonialDto"
   ],
-  "SelectedNode": "\\SignalRApi\\Mapping\\TestimonialMapping.cs",
+  "SelectedNode": "\\SignalRProject.sln",
   "PreviewInSolutionExplorer": false
 }
