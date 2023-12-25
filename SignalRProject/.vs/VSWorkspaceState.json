@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SignalR.BusinessLayer",
-    "\\SignalRApi",
-    "\\SignalRApi\\Mapping",
-    "\\SignalRDtoLayer",
-    "\\SignalRDtoLayer\\TestimonialDto"
+    "\\SignalRwebUI",
+    "\\SignalRwebUI\\Views",
+    "\\SignalRwebUI\\Views\\AdminLayout",
+    "\\SignalRwebUI\\Views\\Category"
   ],
-  "SelectedNode": "\\SignalRProject.sln",
+  "SelectedNode": "\\SignalRwebUI\\Views\\Category\\CreateCategory.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -45,7 +45,7 @@ namespace SignalR.Api.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteCategory(int id)
         {
@@ -54,7 +54,7 @@ namespace SignalR.Api.Controllers
             return Ok("Kategori başarıyla silindi");
         }
 
-        [HttpGet("GetCategory")]
+        [HttpGet("{id}")]
 
         public IActionResult GetCategory(int id)
         {
