@@ -11,13 +11,11 @@ namespace SignalR.Api.Mapping
 
             CreateMap<Product, GetProductDto>().ReverseMap();
             CreateMap<Product, CreateProdcutDto>().ReverseMap();
-            CreateMap<Product, GetProductDto>().ReverseMap();
+            CreateMap<Product, ResultProductDto>().ReverseMap();
             CreateMap<Product, UpdateProductDto>().ReverseMap();
             CreateMap<Product, ResultProductWithCategory>().ReverseMap();
 
-            CreateMap<Product, ResultProductWithCategory>()
-                .ForMember(destinationMember: a => a.CategoryName, memberOptions: p => p.MapFrom(c => c.Category.CategoryName))
-                .ReverseMap();
+           
 
 
 

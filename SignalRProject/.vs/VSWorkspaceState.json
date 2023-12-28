@@ -2,10 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\SignalRwebUI",
+    "\\SignalRwebUI\\Controllers",
     "\\SignalRwebUI\\Views",
     "\\SignalRwebUI\\Views\\AdminLayout",
-    "\\SignalRwebUI\\Views\\Category"
+    "\\SignalRwebUI\\Views\\Category",
+    "\\SignalRwebUI\\Views\\Product",
+    "\\SignalRwebUI\\Views\\Shared",
+    "\\SignalRwebUI\\Views\\Shared\\Components",
+    "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\Category\\CreateCategory.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,53 @@
+﻿@model UpdateProductDto
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Ürün İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Ürün Güncelleme Sayfası</div>
+                        </div>
+                        <div class="card-body">
+                            <input type="hidden" asp-for="ProductID" />
+                            <div class="form-group">
+                                <label for="productname">Ürün Adını Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ProductName" id="productname" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Price">Ürün Fiyatı Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Price" id="Price" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ImageUrl">Ürün Görselini Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ImageUrl" id="ImageUrl" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Category">Ürün Kategorisini Seçiniz</label>
+                                @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Description">Ürün Açıklamasını Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Description" id="Description" />
+                            </div>
+
+                            <div class="card-action">
+                                <button class="btn btn-primary">Ürün Güncelle</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

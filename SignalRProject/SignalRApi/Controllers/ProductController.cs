@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SignalR.BusinessLayer.Abstract;
+using SignalR.DataAccessLayer.Concrete;
 using SignalR.DtoLayer.DiscountDto;
 using SignalR.DtoLayer.FeatureDto;
 using SignalR.DtoLayer.ProductDto;
@@ -14,38 +16,40 @@ namespace SignalR.Api.Controllers
     public class ProductController : ControllerBase
     {
 
-        private readonly IProductService productService;
-        private readonly IMapper mapper;
+        private readonly IProductService _productService;
+        private readonly IMapper _mapper;
 
         public ProductController(IProductService productService, IMapper mapper)
         {
-            this.productService = productService;
-            this.mapper = mapper;
+            _productService = productService;
+            _mapper = mapper;
         }
 
         [HttpGet]
 
         public IActionResult ProductList()
         {
-            var value = mapper.Map<List<ResultProductDto>>(productService.TGetListAll);
+            var value = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
 
             return Ok(value);
 
         }
 
-
-
-
         [HttpGet("ProductListWithCategory")]
-
-
         public IActionResult ProductListWithCategory()
-
-
         {
-
-            var value = mapper.Map<List<ResultProductWithCategory>>(productService.TGetProductsWithCategories());
-            return Ok(value);   
+            var context = new SignalRContext();
+            var values = context.Product.Include(x => x.Category).Select(y => new ResultProductWithCategory
+            {
+                Description = y.Description,
+                ImageUrl = y.ImageUrl,
+                Price = y.Price,
+                ProductID = y.ProductID,
+                ProductName = y.ProductName,
+                ProductStatus = y.ProductStatus,
+                CategoryName = y.Category.CategoryName
+            });
+            return Ok(values.ToList());
         }
 
 
@@ -54,14 +58,14 @@ namespace SignalR.Api.Controllers
 
         public IActionResult CreateProduct(CreateProdcutDto createProdcutDto)
         {
-            productService.TAdd(new Product()
+            _productService.TAdd(new Product()
             {
                 Description = createProdcutDto.Description,
                 ImageUrl = createProdcutDto.ImageUrl,
                 Price = createProdcutDto.Price,
                 ProductName = createProdcutDto.ProductName,
                 ProductStatus = createProdcutDto.ProductStatus,
-
+                CategoryId = createProdcutDto.CategoryID
 
 
             });
@@ -69,20 +73,20 @@ namespace SignalR.Api.Controllers
             return Ok("Ürün Bilgisi Eklendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteProduct(int id)
         {
-            var value = productService.TGetById(id);
-            productService.TDelete(value);
+            var value = _productService.TGetById(id);
+            _productService.TDelete(value);
             return Ok("Ürün bilgisi Silindi");
         }
 
-        [HttpGet("GetProduct")]
-
+        [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
-            var value = productService.TGetById(id);
+            var value = _productService.TGetById(id);
+            _productService.TUpdate(value);
             return Ok(value);
         }
 
@@ -90,7 +94,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult UpdateProduct(UpdateProductDto updateProductDto)
         {
-            productService.TUpdate(new Product()
+            _productService.TUpdate(new Product()
             {
                 Description = updateProductDto.Description,
                 ImageUrl = updateProductDto.ImageUrl,
@@ -98,7 +102,7 @@ namespace SignalR.Api.Controllers
                 ProductName = updateProductDto.ProductName,
                 ProductStatus = updateProductDto.ProductStatus,
                 ProductID = updateProductDto.ProductID,
-
+                CategoryId = updateProductDto.CategoryID
 
 
             });
