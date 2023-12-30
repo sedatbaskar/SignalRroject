@@ -25,7 +25,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult ContactList()
         {
-            var value = _mapper.Map<List<ResultContactDto>>(_contactService.TGetListAll);
+            var value = _mapper.Map<List<ResultContactDto>>(_contactService.TGetListAll());
 
             return Ok(value);
 
@@ -46,7 +46,7 @@ namespace SignalR.Api.Controllers
             return Ok("İletişim Bilgisi Eklendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteContact(int id)
         {
@@ -55,7 +55,7 @@ namespace SignalR.Api.Controllers
             return Ok("iletişim bilgisi Silindi");
         }
 
-        [HttpGet("GetContact")]
+        [HttpGet("{id}")]
 
         public IActionResult GetContact(int id)
         {
@@ -74,7 +74,7 @@ namespace SignalR.Api.Controllers
                 Location = updateContactDto.Location,
                 Mail = updateContactDto.Mail,
                 Phone = updateContactDto.Phone,
-                 ContactID = updateContactDto.ContactID,
+                ContactID = updateContactDto.ContactID,
 
 
             });

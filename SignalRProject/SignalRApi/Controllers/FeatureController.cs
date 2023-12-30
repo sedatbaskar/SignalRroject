@@ -12,19 +12,19 @@ namespace SignalR.Api.Controllers
     [ApiController]
     public class FeatureController : ControllerBase
     {
-        private readonly IFeatureService featureService;
-        private readonly IMapper mapper;
+        private readonly IFeatureService _featureService;
+        private readonly IMapper _mapper;
 
         public FeatureController(IFeatureService featureService, IMapper mapper)
         {
-            this.featureService = featureService;
-            this.mapper = mapper;
+            _featureService = featureService;
+           _mapper = mapper;
         }
         [HttpGet]
 
         public IActionResult FeatureList()
         {
-            var value = mapper.Map<List<ResultDiscountDto>>(featureService.TGetListAll);
+            var value = _mapper.Map<List<ResultFeatureDto>>(_featureService.TGetListAll());
 
             return Ok(value);
 
@@ -34,7 +34,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult CreateFeature(CreateFeatureDto createFeatureDto)
         {
-            featureService.TAdd(new Feature()
+            _featureService.TAdd(new Feature()
             {
                 Title1 = createFeatureDto.Title1,
                 Description1 = createFeatureDto.Description1,
@@ -48,20 +48,20 @@ namespace SignalR.Api.Controllers
             return Ok("Öne çıkanlar  Eklendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteFeature(int id)
         {
-            var value = featureService.TGetById(id);
-            featureService.TDelete(value);
+            var value = _featureService.TGetById(id);
+            _featureService.TDelete(value);
             return Ok("Önce Çıkan Silindi");
         }
 
-        [HttpGet("GetFeature")]
+        [HttpGet("{id}")]
 
         public IActionResult GetFeature(int id)
         {
-            var value = featureService.TGetById(id);
+            var value = _featureService.TGetById(id);
             return Ok(value);
         }
 
@@ -69,7 +69,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult UpdateFeature(UpdateFeatureDto updateFeatureDto)
         {
-            featureService.TUpdate(new Feature()
+            _featureService.TUpdate(new Feature()
             {
                 Title1 = updateFeatureDto.Title1,
                 Description1 = updateFeatureDto.Description1,

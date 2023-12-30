@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SignalR.DtoLayer.AboutDto;
+using SignalR.DtoLayer.FeatureDto;
 using SignalREntityLayer.Entities;
 
 namespace SignalR.Api.Mapping
@@ -10,10 +11,10 @@ namespace SignalR.Api.Mapping
         public FeatureMapping()
         {
 
-            CreateMap<Feature, CreateBookingDto>().ReverseMap();
-            CreateMap<Feature, UpdateBookingDto>().ReverseMap();
-            CreateMap<Feature, ResultBookingDto>().ReverseMap();
-            CreateMap<Feature, GetBookingDto>().ReverseMap();
+            CreateMap<Feature, CreateFeatureDto>().ReverseMap();
+            CreateMap<Feature, UpdateFeatureDto>().ReverseMap();
+            CreateMap<Feature, ResultFeatureDto>().ReverseMap();
+            CreateMap<Feature, GetFeatureDto>().ReverseMap();
 
         }
 

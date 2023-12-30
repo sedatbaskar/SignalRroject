@@ -26,7 +26,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult DiscountList()
         {
-            var value = _mapper.Map<List<ResultDiscountDto>>(_discountService.TGetListAll);
+            var value = _mapper.Map<List<ResultDiscountDto>>( _discountService.TGetListAll());
 
             return Ok(value);
 
@@ -47,7 +47,7 @@ namespace SignalR.Api.Controllers
             return Ok("indirimde ki ürünler Eklendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteDiscount(int id)
         {
@@ -56,7 +56,7 @@ namespace SignalR.Api.Controllers
             return Ok("İndirimde ki ürünler Silindi");
         }
 
-        [HttpGet("GetDiscount")]
+        [HttpGet("{id}")]
 
         public IActionResult GetDiscount(int id)
         {

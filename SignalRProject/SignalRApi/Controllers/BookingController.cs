@@ -48,7 +48,7 @@ namespace SignalR.Api.Controllers
             return Ok("Rezervasyon yapıldı");
 
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteBooking(int id)
 
         {
@@ -78,7 +78,7 @@ namespace SignalR.Api.Controllers
             return Ok("Rezervaon güncellendi");
         }
 
-        [HttpGet("Get Booking")]
+        [HttpGet("{id}")]
 
         public IActionResult GetBooking(int id)
         {
@@ -86,8 +86,8 @@ namespace SignalR.Api.Controllers
             return Ok(value);
         }
 
-        
-       
+
+
     }
 
 }

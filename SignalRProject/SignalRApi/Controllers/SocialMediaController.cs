@@ -25,7 +25,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult SocialMediaList()
         {
-            var value = mapper.Map<List<ResultSocialMediaDto>>(socialMediaService.TGetListAll);
+            var value = mapper.Map<List<ResultSocialMediaDto>>(socialMediaService.TGetListAll());
 
             return Ok(value);
 
@@ -47,7 +47,7 @@ namespace SignalR.Api.Controllers
             return Ok("Social Media bilgisi Eklendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteSocialMedia(int id)
         {
@@ -56,7 +56,7 @@ namespace SignalR.Api.Controllers
             return Ok("Social Media Bilgisi Silindi");
         }
 
-        [HttpGet("GetSocialMedia")]
+        [HttpGet("{id}")]
 
         public IActionResult GetSocialMedia(int id)
         {

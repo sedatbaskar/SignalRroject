@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿
+
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
@@ -12,20 +14,20 @@ namespace SignalR.Api.Controllers
     [ApiController]
     public class TestimonialController : ControllerBase
     {
-        private readonly ITestimonialService testimonialService;
-        private readonly IMapper mapper;
+        private readonly ITestimonialService _testimonialService;
+        private readonly IMapper _mapper;
 
         public TestimonialController(ITestimonialService testimonialService, IMapper mapper)
         {
-            this.testimonialService = testimonialService;
-            this.mapper = mapper;
+            _testimonialService = testimonialService;
+            _mapper = mapper;
         }
 
         [HttpGet]
 
         public IActionResult TestimonialList()
         {
-            var value = mapper.Map<List<ResultTestimonialDto>>(testimonialService.TGetListAll);
+            var value = _mapper.Map<List<ResultTestimonialDto>>(_testimonialService.TGetListAll());
 
             return Ok(value);
 
@@ -35,7 +37,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult CreateTestimonial(CreateTestimonialDto createTestimonialDto)
         {
-            testimonialService.TAdd(new Testimonial()
+            _testimonialService.TAdd(new Testimonial
             {
                 Comment = createTestimonialDto.Comment,
                 ImageUrl = createTestimonialDto.ImageUrl,
@@ -50,20 +52,20 @@ namespace SignalR.Api.Controllers
             return Ok("Referans bilgisi Eklendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteTestimonial(int id)
         {
-            var value = testimonialService.TGetById(id);
-            testimonialService.TDelete(value);
+            var value = _testimonialService.TGetById(id);
+            _testimonialService.TDelete(value);
             return Ok("Referans bilgisi Silindi");
         }
 
-        [HttpGet("GetTestimonial")]
+        [HttpGet("{id}")]
 
         public IActionResult GetTestimonial(int id)
         {
-            var value = testimonialService.TGetById(id);
+            var value = _testimonialService.TGetById(id);
             return Ok(value);
         }
 
@@ -71,7 +73,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto)
         {
-            testimonialService.TUpdate(new Testimonial()
+            _testimonialService.TUpdate(new Testimonial()
             {
 
                 Comment = updateTestimonialDto.Comment,
