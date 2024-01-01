@@ -44,6 +44,20 @@ namespace SignalR.Api.Controllers
 
 		}
 
+		[HttpGet("ProductCountbyCategoryNameHamburger")]
+
+		public IActionResult ProductCountbyCategoryNameHamburger() 
+		{
+			return Ok(_productService.TProductCountbyCategoryNameHamburger());
+		}
+
+		[HttpGet("ProductCountbyCategoryNameDrink")]
+
+		public IActionResult ProductCountbyCategoryNameDrink()
+		{
+			return Ok(_productService.TProductCountbyCategoryNameDrink());
+		}
+
 		[HttpGet("ProductListWithCategory")]
 		public IActionResult ProductListWithCategory()
 		{

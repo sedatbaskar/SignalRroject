@@ -2,7 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\SignalRApi",
-    "\\SignalRApi\\Hubs",
+    "\\SignalRApi\\Controllers",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
     "\\SignalRwebUI\\Views\\Product",
@@ -11,6 +11,6 @@
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault"
   ],
-  "SelectedNode": "\\SignalRProject.sln",
+  "SelectedNode": "\\SignalRApi\\Controllers\\CategoryController.cs",
   "PreviewInSolutionExplorer": false
 }
