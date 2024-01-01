@@ -44,9 +44,33 @@ namespace SignalR.Api.Controllers
 
 		}
 
+		[HttpGet("ProductAvg")]
+
+		public IActionResult ProductAvg()
+		{
+			return Ok(_productService.TProductAvg());
+
+		}
+
+		[HttpGet("ProductNamePriceByMax")]
+
+		public IActionResult ProductNamePriceByMax()
+		{
+			return Ok(_productService.TProductNamePriceByMax());
+
+		}
+
+		[HttpGet("ProductNamePriceByMin")]
+
+		public IActionResult ProductNamePriceByMin()
+		{
+			return Ok(_productService.TProductNamePriceByMin());
+
+		}
+
 		[HttpGet("ProductCountbyCategoryNameHamburger")]
 
-		public IActionResult ProductCountbyCategoryNameHamburger() 
+		public IActionResult ProductCountbyCategoryNameHamburger()
 		{
 			return Ok(_productService.TProductCountbyCategoryNameHamburger());
 		}
@@ -57,6 +81,8 @@ namespace SignalR.Api.Controllers
 		{
 			return Ok(_productService.TProductCountbyCategoryNameDrink());
 		}
+
+
 
 		[HttpGet("ProductListWithCategory")]
 		public IActionResult ProductListWithCategory()

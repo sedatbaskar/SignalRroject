@@ -24,6 +24,13 @@ namespace SignalR.DataAccessLayer.EntityFramework
 			return values;
 		}
 
+		public decimal ProductAvg()
+		{
+			var context = new SignalRContext();
+			var values = context.Product.Average(x => x.Price);
+			return values;
+		}
+
 		public int ProductCount()
 		{
 			using var context = new SignalRContext();
@@ -32,16 +39,41 @@ namespace SignalR.DataAccessLayer.EntityFramework
 
 		public int ProductCountbyCategoryNameDrink()
 		{
-			using var content = new SignalRContext();
-			return content.Product.Where(x => x.CategoryId == (content.Categorys.Where(y => y.CategoryName == "içecek").Select
+			using var context = new SignalRContext();
+			return context.Product.Where(x => x.CategoryId == (context.Categorys.Where(y => y.CategoryName == "içecek").Select
 			(z => z.CategoryID).FirstOrDefault())).Count();
 		}
 
 		public int ProductCountbyCategoryNameHamburger()
 		{
-			using var content = new SignalRContext();
-			return content.Product.Where(x => x.CategoryId == (content.Categorys.Where(y => y.CategoryName == "Hamburger").Select
+			using var context = new SignalRContext();
+			return context.Product.Where(x => x.CategoryId == (context.Categorys.Where(y => y.CategoryName == "Hamburger").Select
 			(z => z.CategoryID).FirstOrDefault())).Count();
+		}
+
+		public string ProductNamePriceByMax()
+		{
+			using var context = new SignalRContext();
+
+			var mostExpensiveProduct = context.Product
+				.OrderByDescending(p => p.Price)
+				.FirstOrDefault();
+			return $"{mostExpensiveProduct?.ProductName}, Fiyat: {mostExpensiveProduct?.Price}";
+
+
+			
+		}
+
+
+
+		public string ProductNamePriceByMin()
+		{
+			using var content = new SignalRContext();
+
+			var cheapestProduct = content.Product
+				.OrderBy(p => p.Price)
+				.FirstOrDefault();
+			return $"{cheapestProduct?.ProductName}, Fiyat: {cheapestProduct?.Price}";
 		}
 	}
 }

@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 
 namespace SignalR.BusinessLayer.Abstract
 {
-    public interface IProductService : IGenericService<Product>
-    {
+	public interface IProductService : IGenericService<Product>
+	{
 
-        List<Product> TGetProductsWithCategories();
-        int TProductCount();
+		List<Product> TGetProductsWithCategories();
+		int TProductCount();
 		int TProductCountbyCategoryNameHamburger();
 		int TProductCountbyCategoryNameDrink();
+		string TProductNamePriceByMax();
+		decimal TProductAvg();
+		string TProductNamePriceByMin();
 	}
 }
