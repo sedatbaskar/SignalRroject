@@ -7,74 +7,97 @@ using SignalREntityLayer.Entities;
 
 namespace SignalR.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class CategoryController : ControllerBase
-    {
-        private readonly ICategoryService _categoryService;
-        private readonly IMapper _mapper;
+	[Route("api/[controller]")]
+	[ApiController]
+	public class CategoryController : ControllerBase
+	{
+		private readonly ICategoryService _categoryService;
+		private readonly IMapper _mapper;
 
-        public CategoryController(ICategoryService categoryService, IMapper mapper)
-        {
-            _categoryService = categoryService;
-            _mapper = mapper;
-        }
+		public CategoryController(ICategoryService categoryService, IMapper mapper)
+		{
+			_categoryService = categoryService;
+			_mapper = mapper;
+		}
 
-        [HttpGet]
-        public IActionResult CategoryList()
-        {
-            var value = _mapper.Map<List<ResultCategoryDto>>(_categoryService.TGetListAll());
-            return Ok(value);
+		[HttpGet]
+		public IActionResult CategoryList()
+		{
+			var value = _mapper.Map<List<ResultCategoryDto>>(_categoryService.TGetListAll());
+			return Ok(value);
 
 
-        }
+		}
+		[HttpGet("CategoryCount")]
 
-        [HttpPost]
+		public IActionResult CategoryCount()
+		{
+			return Ok(_categoryService.TCategoryCount());
 
-        public IActionResult CreateCategory(CreateCategoryDto createCategoryDto)
-        {
-            _categoryService.TAdd(new Category
-            {
+		}
 
-                CategoryName = createCategoryDto.CategoryName,
-                Status = true
+		[HttpGet("ActiveCategoryCount")]
 
-            });
+		public IActionResult ActiveCategoryCount()
+		{
+			return Ok(_categoryService.TActiveCategoryCount());
 
-            return Ok("Kategori Eklendi");
+		}
+		[HttpGet("PassiveCategoryCount")]
 
-        }
+		public IActionResult PassiveCategoryCount()
+		{
+			return Ok(_categoryService.TPassiveCategoryCount());
 
-        [HttpDelete("{id}")]
+		}
 
-        public IActionResult DeleteCategory(int id)
-        {
-            var value = _categoryService.TGetById(id);
-            _categoryService.TDelete(value);
-            return Ok("Kategori başarıyla silindi");
-        }
 
-        [HttpGet("{id}")]
+		[HttpPost]
 
-        public IActionResult GetCategory(int id)
-        {
-            var value = _categoryService.TGetById(id);
-            return Ok(value);
+		public IActionResult CreateCategory(CreateCategoryDto createCategoryDto)
+		{
+			_categoryService.TAdd(new Category
+			{
 
-        }
+				CategoryName = createCategoryDto.CategoryName,
+				Status = true
 
-        [HttpPut]
-        public IActionResult UpdateCategory(UpdateCategoryDto updateCategoryDto)
-        {
-            _categoryService.TUpdate(new Category()
-            {
-                CategoryName = updateCategoryDto.CategoryName,
-                CategoryID = updateCategoryDto.CategoryID,
-                Status = updateCategoryDto.Status,
-                 
-            });
+			});
 
-            return Ok("Kategori Güncellendi");
-        }
-    }
+			return Ok("Kategori Eklendi");
+
+		}
+
+		[HttpDelete("{id}")]
+
+		public IActionResult DeleteCategory(int id)
+		{
+			var value = _categoryService.TGetById(id);
+			_categoryService.TDelete(value);
+			return Ok("Kategori başarıyla silindi");
+		}
+
+		[HttpGet("{id}")]
+
+		public IActionResult GetCategory(int id)
+		{
+			var value = _categoryService.TGetById(id);
+			return Ok(value);
+
+		}
+
+		[HttpPut]
+		public IActionResult UpdateCategory(UpdateCategoryDto updateCategoryDto)
+		{
+			_categoryService.TUpdate(new Category()
+			{
+				CategoryName = updateCategoryDto.CategoryName,
+				CategoryID = updateCategoryDto.CategoryID,
+				Status = updateCategoryDto.Status,
+
+			});
+
+			return Ok("Kategori Güncellendi");
+		}
+	}
 }

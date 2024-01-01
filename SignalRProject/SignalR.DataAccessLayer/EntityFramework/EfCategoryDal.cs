@@ -10,10 +10,28 @@ using System.Threading.Tasks;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfCategoryDal : GenericRepositories<Category>, ICategoryDal
-    {
-        public EfCategoryDal(SignalRContext context) : base(context)
-        {
-        }
-    }
+	public class EfCategoryDal : GenericRepositories<Category>, ICategoryDal
+	{
+		public EfCategoryDal(SignalRContext context) : base(context)
+		{
+		}
+
+		public int ActiveCategoryCount()
+		{
+			using var context = new SignalRContext();
+			return context.Categorys.Where(x => x.Status == true).Count();
+		}
+
+		public int CategoryCount()
+		{
+			using var context = new SignalRContext();
+			return context.Categorys.Count();
+		}
+
+		public int PassiveCategoryCount()
+		{
+			using var context= new SignalRContext();
+			return context.Categorys.Where(x=>x.Status == false).Count();
+		}
+	}
 }
