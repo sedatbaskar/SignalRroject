@@ -1,3 +1,4 @@
+using SignalR.Api.Hubs;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.BusinessLayer.Concrete;
 using SignalR.DataAccessLayer.Abstract;
@@ -12,8 +13,18 @@ namespace SignalRApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyHeader()
+                           .AllowAnyMethod()
+                           .SetIsOriginAllowed((host) => true)
+                           .AllowCredentials();
+                });
+            });
 
-
+            builder.Services.AddSignalR();
 
             builder.Services.AddDbContext<SignalRContext>();
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
@@ -59,12 +70,12 @@ namespace SignalRApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors();
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
 
-
+            app.MapHub<SignalRHub>("/signalrhub");
             app.MapControllers();
 
             app.Run();

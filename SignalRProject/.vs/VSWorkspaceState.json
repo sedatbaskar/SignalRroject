@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SignalRApi",
+    "\\SignalRApi\\Hubs",
     "\\SignalRwebUI",
-    "\\SignalRwebUI\\Controllers",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Category",
-    "\\SignalRwebUI\\Views\\Contact",
     "\\SignalRwebUI\\Views\\Product",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
-    "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent"
+    "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
+    "\\SignalRwebUI\\Views\\SignalRDefault"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Controllers\\TestimonialController.cs",
+  "SelectedNode": "\\SignalRApi\\Hubs\\SignalRHub.cs",
   "PreviewInSolutionExplorer": false
 }

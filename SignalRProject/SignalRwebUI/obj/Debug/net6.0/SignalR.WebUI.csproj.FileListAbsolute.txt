@@ -254,3 +254,4 @@ C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalRwebU
 C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalRwebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalRwebUI\obj\Debug\net6.0\SignalR.WebUI.csproj.AssemblyReference.cache
 C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalRwebUI\obj\Debug\net6.0\SignalR.WebUI.csproj.CopyComplete
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalRwebUI\bin\Debug\net6.0\libman.json
