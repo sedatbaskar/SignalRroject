@@ -82,9 +82,17 @@ namespace SignalR.Api.Controllers
 			return Ok(_productService.TProductCountbyCategoryNameDrink());
 		}
 
+        [HttpGet("ProductAvgPriceByHamburger")]
+
+        public IActionResult ProductAvgPriceByHamburger()
+        {
+            return Ok(_productService.TProductAvgPriceByHamburger());
+        }
+
+        
 
 
-		[HttpGet("ProductListWithCategory")]
+        [HttpGet("ProductListWithCategory")]
 		public IActionResult ProductListWithCategory()
 		{
 			var context = new SignalRContext();

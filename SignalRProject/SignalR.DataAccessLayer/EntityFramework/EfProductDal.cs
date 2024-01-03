@@ -31,7 +31,14 @@ namespace SignalR.DataAccessLayer.EntityFramework
 			return values;
 		}
 
-		public int ProductCount()
+        public decimal ProductAvgPriceByHamburger()
+        {
+            using var context = new SignalRContext();
+            return context.Product.Where(x => x.CategoryId == (context.Categorys.Where(y => y.CategoryName == "Hamburger").Select
+            (z => z.CategoryID).FirstOrDefault())).Average(w => w.Price);
+        }
+
+        public int ProductCount()
 		{
 			using var context = new SignalRContext();
 			return context.Product.Count();
@@ -44,14 +51,25 @@ namespace SignalR.DataAccessLayer.EntityFramework
 			(z => z.CategoryID).FirstOrDefault())).Count();
 		}
 
-		public int ProductCountbyCategoryNameHamburger()
-		{
-			using var context = new SignalRContext();
-			return context.Product.Where(x => x.CategoryId == (context.Categorys.Where(y => y.CategoryName == "Hamburger").Select
-			(z => z.CategoryID).FirstOrDefault())).Count();
-		}
+        public int ProductCountbyCategoryNameHamburger()
+        {
+            using var context = new SignalRContext();
 
-		public string ProductNamePriceByMax()
+            var hamburgerCategoryId = context.Categorys
+                .FirstOrDefault(category => category.CategoryName == "Hamburger")?.CategoryID;
+
+            if (hamburgerCategoryId.HasValue)
+            {
+                var productCount = context.Product
+                    .Count(product => product.CategoryId == hamburgerCategoryId);
+
+                return productCount;
+            }
+
+            return 0; // Varsayılan olarak 0 döndür
+        }
+
+        public string ProductNamePriceByMax()
 		{
 			using var context = new SignalRContext();
 
