@@ -18,6 +18,11 @@ namespace SignalR.BusinessLayer.Concrete
             _orderDal = orderDal;
         }
 
+        public decimal TLastOrderPrice()
+        {
+            return _orderDal.LastOrderPrice();  
+        }
+
         public int TActiveOrderCount()
         {
             return _orderDal.ActiveOrderCount();
@@ -51,6 +56,11 @@ namespace SignalR.BusinessLayer.Concrete
         public void TUpdate(Order entity)
         {
             _orderDal.Update(entity);
+        }
+
+        public decimal TTodayTotalPrice()
+        {
+          return _orderDal.TodayTotalPrice();
         }
     }
 }

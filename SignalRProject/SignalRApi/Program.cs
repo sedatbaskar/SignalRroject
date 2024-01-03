@@ -62,6 +62,13 @@ namespace SignalRApi
             builder.Services.AddScoped<IOrderService,OrderManager>();
             builder.Services.AddScoped<IOrderDal, EfOrderDal>();
 
+            builder.Services.AddScoped<IMoneyCasesService, MoneyCasesManager>();
+            builder.Services.AddScoped<IMoneyCasesDal, EfMoneyCasesDal>();
+
+            builder.Services.AddScoped<IMenuTableService, MenuTableManager>();
+            builder.Services.AddScoped<IMenuTableDal, EfMenuTableDal>();
+
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
