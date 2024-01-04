@@ -76,7 +76,7 @@ namespace SignalR.DataAccessLayer.EntityFramework
 			var mostExpensiveProduct = context.Product
 				.OrderByDescending(p => p.Price)
 				.FirstOrDefault();
-			return $"{mostExpensiveProduct?.ProductName}, Fiyat: {mostExpensiveProduct?.Price}";
+			return $"{mostExpensiveProduct?.ProductName}";
 
 
 			
@@ -91,7 +91,7 @@ namespace SignalR.DataAccessLayer.EntityFramework
 			var cheapestProduct = content.Product
 				.OrderBy(p => p.Price)
 				.FirstOrDefault();
-			return $"{cheapestProduct?.ProductName}, Fiyat: {cheapestProduct?.Price}";
+			return $"{cheapestProduct?.ProductName}";
 		}
 	}
 }

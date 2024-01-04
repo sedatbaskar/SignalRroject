@@ -9,8 +9,9 @@
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
-    "\\SignalRwebUI\\Views\\SignalRDefault"
+    "\\SignalRwebUI\\Views\\SignalRDefault",
+    "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRApi\\Hubs\\SignalRHub.cs",
+  "SelectedNode": "\\SignalRwebUI\\Views\\Statistic\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
