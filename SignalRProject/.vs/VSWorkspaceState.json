@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SignalR.DataAccessLayer",
-    "\\SignalR.DataAccessLayer\\EntityFramework",
+    "\\SignalRApi",
+    "\\SignalRApi\\Hubs",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
     "\\SignalRwebUI\\Views\\Product",
@@ -11,6 +11,6 @@
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault"
   ],
-  "SelectedNode": "\\SignalRProject.sln",
+  "SelectedNode": "\\SignalRApi\\Hubs\\SignalRHub.cs",
   "PreviewInSolutionExplorer": false
 }
