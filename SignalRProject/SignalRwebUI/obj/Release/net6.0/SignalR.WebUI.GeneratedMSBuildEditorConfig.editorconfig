@@ -70,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxVcGRhdGVDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/DefaultControllers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdENvbnRyb2xsZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Discount/CreateDiscount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY291bnRcQ3JlYXRlRGlzY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -118,6 +122,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3Jlc3NCYXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_DefaultOfferComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRPZmZlckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_DefaultSliderComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRTbGlkZXJDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_LayoutFooterPartialComponent/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0xheW91dEZvb3RlclBhcnRpYWxDb21wb25lbnRcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,6 +148,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_LayoutSidebarPartialComponent/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0xheW91dFNpZGViYXJQYXJ0aWFsQ29tcG9uZW50XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_UILayoutFooterComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VJTGF5b3V0Rm9vdGVyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_UILayoutHeadComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VJTGF5b3V0SGVhZENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_UILayoutNavbarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VJTGF5b3V0TmF2YmFyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Components/_UILayoutScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VJTGF5b3V0U2NyaXB0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Shared/Error.cshtml]
@@ -180,6 +208,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/Testimonial/UpdateTestimonial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGltb25pYWxcVXBkYXRlVGVzdGltb25pYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/UILayout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUlMYXlvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sedat/OneDrive/Belgeler/GitHub/SignalRroject/SignalRProject/SignalRwebUI/Views/_ViewImports.cshtml]

@@ -15,6 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\feane-1.0.0\css\style.css.map" />
+    <None Include="wwwroot\feane-1.0.0\css\style.scss" />
+    <None Include="wwwroot\feane-1.0.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\feane-1.0.0\js\bootstrap.js" />
+    <None Include="wwwroot\feane-1.0.0\js\custom.js" />
+    <None Include="wwwroot\feane-1.0.0\js\jquery-3.4.1.min.js" />
     <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
   </ItemGroup>
 

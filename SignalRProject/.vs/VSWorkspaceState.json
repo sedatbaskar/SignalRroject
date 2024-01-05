@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SignalRApi",
-    "\\SignalRApi\\Hubs",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
     "\\SignalRwebUI\\Views\\Product",
+    "\\SignalRwebUI\\Views\\ProgressBar",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\Statistic\\Index.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Views\\ProgressBar\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
