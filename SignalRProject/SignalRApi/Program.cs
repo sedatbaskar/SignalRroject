@@ -70,7 +70,10 @@ namespace SignalRApi
 			builder.Services.AddScoped<IMenuTableService, MenuTableManager>();
 			builder.Services.AddScoped<IMenuTableDal, EfMenuTableDal>();
 
-			builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<ISliderService, SliderManager>();
+            builder.Services.AddScoped<ISliderDal, EfSliderDal>();
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 			builder.Services.AddControllers();
