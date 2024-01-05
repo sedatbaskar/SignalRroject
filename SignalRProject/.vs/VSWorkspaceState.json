@@ -3,7 +3,7 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\ProgressBar",
+    "\\SignalRwebUI\\Views\\DefaultControllers",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_DefaultOfferComponentPartial",
@@ -11,6 +11,6 @@
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\Shared\\Components\\_DefaultOfferComponentPartial\\Default.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Views\\DefaultControllers\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
