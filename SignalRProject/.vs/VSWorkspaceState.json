@@ -3,14 +3,14 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\DefaultControllers",
     "\\SignalRwebUI\\Views\\ProgressBar",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
+    "\\SignalRwebUI\\Views\\Shared\\Components\\_DefaultOfferComponentPartial",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\DefaultControllers\\Index.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Views\\Shared\\Components\\_DefaultOfferComponentPartial\\Default.cshtml",
   "PreviewInSolutionExplorer": false
 }
