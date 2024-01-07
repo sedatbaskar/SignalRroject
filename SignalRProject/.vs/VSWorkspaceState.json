@@ -3,7 +3,7 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Menu",
+    "\\SignalRwebUI\\Views\\Basket",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_DefaultOfferComponentPartial",
@@ -11,6 +11,6 @@
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\Menu\\Index.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Views\\Basket\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
