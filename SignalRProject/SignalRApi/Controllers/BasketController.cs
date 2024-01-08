@@ -6,6 +6,7 @@ using SignalR.BusinessLayer.Abstract;
 using SignalR.DataAccessLayer.Concrete;
 using SignalR.DtoLayer.BasketDto;
 using SignalR.EntityLayer.Entities;
+using System.Net.Http;
 
 namespace SignalR.Api.Controllers
 {
@@ -66,6 +67,16 @@ namespace SignalR.Api.Controllers
             return Ok();
 
                 }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBasket(int id)
+        {
+            var values = _basketService.TGetById(id);
+            _basketService.TDelete(values);
+            return Ok("Sepetteki seçilen ürün silindi");
+
+        }
     }
 
 }

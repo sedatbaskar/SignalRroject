@@ -48,8 +48,12 @@
                     <tbody>
                         @foreach (var item in Model)
                         {
+                            basketTotalPrice = Model.Sum(x => x.Price);
+                            tax = basketTotalPrice / 100 * 10;
+                            basketTotalPriceWithTax = basketTotalPrice + tax;
                             count++;
-                            basketTotalPrice += item.Price; // Toplam tutarı ürünler üzerinden hesapla
+
+
                             <tr>
                                 <th scope="row">@count</th>
                                 <td>@item.ProductName</td>
@@ -57,12 +61,12 @@
                                 <td>@item.Price</td>
                                 <td>@item.TotalPrice</td>
                                 <td class="btn-delete">
-                                    <form asp-action="DeleteBasket" asp-controller="Baskets" method="post">
+                                    <form asp-action="DeleteBasket" asp-controller="Basket" method="post">
                                         <input type="hidden" name="basketId" value="@item.BasketID" />
                                         <button type="submit" class="btn btn-sm btn-danger">
-                                            <i class="fa fa-times"></i>
+                                            <i class="fa fa-times"></i>   
                                         </button>
-                                    </form>
+                                    </form>   @* //ilerisi için bi form oluşturdu şuan action da silme yapmıyor *@
                                 </td>
                             </tr>
                         }

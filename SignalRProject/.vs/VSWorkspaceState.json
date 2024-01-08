@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SignalRApi",
+    "\\SignalRApi\\Controllers",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Basket",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
-    "\\SignalRwebUI\\Views\\Shared\\Components\\_DefaultOfferComponentPartial",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRProject.sln",
+  "SelectedNode": "\\SignalRApi\\Controllers\\BasketController.cs",
   "PreviewInSolutionExplorer": false
 }
