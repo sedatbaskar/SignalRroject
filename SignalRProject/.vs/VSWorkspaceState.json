@@ -5,12 +5,13 @@
     "\\SignalRApi\\Controllers",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
+    "\\SignalRwebUI\\Views\\BookATable",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRProject.sln",
+  "SelectedNode": "\\SignalRwebUI\\Views\\BookATable\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

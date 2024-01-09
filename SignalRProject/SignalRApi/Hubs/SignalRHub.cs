@@ -13,14 +13,15 @@ namespace SignalR.Api.Hubs
         private readonly IOrderService _orderService;
         private readonly IMoneyCasesService _moneyCasesService;
         private readonly IMenuTableService _menuTableService;
-        public SignalRHub(ICategoryService categoryService, IProductService productService, IOrderService orderService,IMoneyCasesService moneyCasesService,IMenuTableService menuTableService)
+        private readonly IBookingService _bookingService;
+        public SignalRHub(ICategoryService categoryService, IProductService productService, IOrderService orderService, IMoneyCasesService moneyCasesService, IMenuTableService menuTableService, IBookingService bookingService)
         {
             _categoryService = categoryService;
             _productService = productService;
-            _orderService = orderService;   
+            _orderService = orderService;
             _moneyCasesService = moneyCasesService;
             _menuTableService = menuTableService;
-
+            _bookingService = bookingService;
         }
 
         public async Task SendStatistic()
@@ -53,7 +54,7 @@ namespace SignalR.Api.Hubs
             await Clients.All.SendAsync("ReceiveProductNamePriceByMin", value9);
 
             var value10 = _productService.TProductAvgPriceByHamburger();
-            await Clients.All.SendAsync("ReceiveProductAvgPriceByHamburger", value10.ToString("0.00"+ "₺"));
+            await Clients.All.SendAsync("ReceiveProductAvgPriceByHamburger", value10.ToString("0.00" + "₺"));
 
             var value11 = _orderService.TTotalOrderCount();
             await Clients.All.SendAsync("ReceiveTotalOrderCount", value11);
@@ -68,20 +69,26 @@ namespace SignalR.Api.Hubs
             await Clients.All.SendAsync("ReceiveTotalMoneyCaseAmount", value14.ToString("0.00" + "₺"));
 
             var value16 = _menuTableService.TMenuTableCount();
-            await Clients.All.SendAsync("ReceiveMenuTableCount",value16);
+            await Clients.All.SendAsync("ReceiveMenuTableCount", value16);
         }
 
         public async Task SendProgress()
         {
-			var value = _moneyCasesService.TTotalMoneyCaseAmount();
-			await Clients.All.SendAsync("ReceiveTotalMoneyCaseAmount", value.ToString("0.00" + "₺"));
+            var value = _moneyCasesService.TTotalMoneyCaseAmount();
+            await Clients.All.SendAsync("ReceiveTotalMoneyCaseAmount", value.ToString("0.00" + "₺"));
 
-			var value2 = _orderService.TActiveOrderCount();
-			await Clients.All.SendAsync("ReceiveActiveOrderCount", value2);
+            var value2 = _orderService.TActiveOrderCount();
+            await Clients.All.SendAsync("ReceiveActiveOrderCount", value2);
 
 
-			var value3 = _menuTableService.TMenuTableCount();
-			await Clients.All.SendAsync("ReceiveMenuTableCount", value3);
-		}
+            var value3 = _menuTableService.TMenuTableCount();
+            await Clients.All.SendAsync("ReceiveMenuTableCount", value3);
+        }
+
+        public async Task GetBookingList()
+        {
+            var values = _bookingService.TGetListAll();
+            await Clients.All.SendAsync("ReceiveBookingList", values);
+        }
     }
 }
