@@ -1,8 +1,10 @@
-﻿@model List<SignalR.WebUI.Dtos.CategoryDtos.ResultCategoryDto>
+﻿@model List<ResultCategoryDto>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
+
 
 <div class="content">
     <div class="container-fluid">
@@ -38,15 +40,15 @@
                                         <td><a href="/Category/UpdateCategory/@item.CategoryID" class="btn btn-outline-success">Güncelle</a></td>
                                     </tr>
                                 }
-                               
-                              
+
+
                             </tbody>
                         </table>
                         <a href="/Category/CreateCategory/" class=" btn btn-outline-primary">Yeni Kategori Girişi</a>
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>

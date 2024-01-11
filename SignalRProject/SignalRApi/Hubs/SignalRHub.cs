@@ -98,6 +98,11 @@ namespace SignalR.Api.Hubs
         {
             var value = _notificationService.TNotificationCountByStatusFalse();
             await Clients.All.SendAsync("ReceiveNoticationCountFalse", value);
+
+            var value2 = _notificationService.TGetAllNotificationByFalse();
+            await Clients.All.SendAsync("ReceiveNoticationFalse", value2);
+
+
         }
     }
 }
