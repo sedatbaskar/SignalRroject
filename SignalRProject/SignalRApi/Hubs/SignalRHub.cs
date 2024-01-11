@@ -101,8 +101,13 @@ namespace SignalR.Api.Hubs
 
             var value2 = _notificationService.TGetAllNotificationByFalse();
             await Clients.All.SendAsync("ReceiveNoticationFalse", value2);
+        }
 
-
+        public async Task MenuTableStatus()
+        {
+            var value = _menuTableService.TGetListAll();
+            await Clients.All.SendAsync("ReceiveMenuTableStatus", value);  
         }
     }
 }
+

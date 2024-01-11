@@ -3,14 +3,14 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Category",
-    "\\SignalRwebUI\\Views\\Discount",
+    "\\SignalRwebUI\\Views\\MenuTable",
+    "\\SignalRwebUI\\Views\\Notifications",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRProject.sln",
+  "SelectedNode": "\\SignalRwebUI\\Views\\MenuTable\\TableListByStatus.cshtml",
   "PreviewInSolutionExplorer": false
 }

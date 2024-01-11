@@ -10,41 +10,16 @@ using System.Threading.Tasks;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfMenuTableDal : GenericRepositories<EfMenuTableDal>, IMenuTableDal
+    public class EfMenuTableDal : GenericRepositories<MenuTable>, IMenuTableDal
     {
         public EfMenuTableDal(SignalRContext context) : base(context)
         {
-        }
 
-        public void Add(MenuTable entity)
-        {
-            throw new NotImplementedException();
         }
-
-        public void Delete(MenuTable entity)
-        {
-            throw new NotImplementedException();
-        }
-
         public int MenuTableCount()
         {
-          using var context = new SignalRContext();
+            using var context = new SignalRContext();
             return context.MenuTables.Count();
-        }
-
-        public void Update(MenuTable entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        MenuTable IGenericDal<MenuTable>.GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<MenuTable> IGenericDal<MenuTable>.GetListAll()
-        {
-            throw new NotImplementedException();
         }
     }
 }

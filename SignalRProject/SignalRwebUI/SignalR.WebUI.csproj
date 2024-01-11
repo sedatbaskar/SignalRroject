@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="CategoryDtos\**" />
+    <Compile Remove="wwwroot\NiceAdmin\**" />
     <Content Remove="CategoryDtos\**" />
+    <Content Remove="wwwroot\NiceAdmin\**" />
     <EmbeddedResource Remove="CategoryDtos\**" />
+    <EmbeddedResource Remove="wwwroot\NiceAdmin\**" />
     <None Remove="CategoryDtos\**" />
+    <None Remove="wwwroot\NiceAdmin\**" />
   </ItemGroup>
 
   <ItemGroup>
