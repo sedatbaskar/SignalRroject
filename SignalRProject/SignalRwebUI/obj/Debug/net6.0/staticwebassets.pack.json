@@ -449,6 +449,10 @@
       "PackagePath": "staticwebassets\\feane-1.0.0\\menu.html"
     },
     {
+      "Id": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\js\\chat.js",
+      "PackagePath": "staticwebassets\\js\\chat.js"
+    },
+    {
       "Id": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

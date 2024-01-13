@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2hAF8Nak/4p/GAdjfI/KUkmiusyIDlDZSGSwweGkx5k=",
+  "Hash": "S4LjUX60xsn6JRUWqly5AIh5UVuuW3Jbb75CDxH6Cvw=",
   "Source": "SignalR.WebUI",
   "BasePath": "_content/SignalR.WebUI",
   "Mode": "Default",
@@ -699,6 +699,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\feane-1.0.0\\menu.html"
+    },
+    {
+      "Identity": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\js\\chat.js",
+      "SourceId": "SignalR.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\",
+      "BasePath": "_content/SignalR.WebUI",
+      "RelativePath": "js/chat.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat.js"
     },
     {
       "Identity": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\js\\site.js",
