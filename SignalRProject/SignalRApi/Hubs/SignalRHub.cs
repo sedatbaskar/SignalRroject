@@ -26,7 +26,7 @@ namespace SignalR.Api.Hubs
             _bookingService = bookingService;
             _notificationService = notificationService;
         }
-
+        public static int clientcount { get; set; } = 0;
         public async Task SendStatistic()
         {
             var value = _categoryService.TCategoryCount();
@@ -106,12 +106,26 @@ namespace SignalR.Api.Hubs
         public async Task MenuTableStatus()
         {
             var value = _menuTableService.TGetListAll();
-            await Clients.All.SendAsync("ReceiveMenuTableStatus", value);  
+            await Clients.All.SendAsync("ReceiveMenuTableStatus", value);
         }
 
-        public async Task  SendMessage(string user,string message)
+        public async Task SendMessage(string user, string message)
         {
-            await Clients.All.SendAsync("ReceiveMessageSend",user,message);
+            await Clients.All.SendAsync("ReceiveMessageSend", user, message);
+
+        }
+
+        public override async Task OnConnectedAsync()
+        {
+            clientcount++;
+            await Clients.All.SendAsync("ReceiveClientCount", clientcount);
+            await base.OnConnectedAsync();
+        }
+        public override async Task OnDisconnectedAsync(Exception? exception)
+        {
+            clientcount--;
+            await Clients.All.SendAsync("ReceiveClientCount", clientcount);
+            await base.OnDisconnectedAsync(exception);
 
         }
     }
