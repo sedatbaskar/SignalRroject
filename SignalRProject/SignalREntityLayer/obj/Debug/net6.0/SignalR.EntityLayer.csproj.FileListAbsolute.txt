@@ -21,3 +21,4 @@ C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREnti
 C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\refint\SignalR.EntityLayer.dll
 C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.pdb
 C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\ref\SignalR.EntityLayer.dll
+C:\Users\sedat\OneDrive\Belgeler\GitHub\SignalRroject\SignalRProject\SignalREntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.csproj.AssemblyReference.cache
