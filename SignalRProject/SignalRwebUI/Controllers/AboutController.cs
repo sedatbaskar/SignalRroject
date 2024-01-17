@@ -39,7 +39,7 @@ namespace SignalR.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createAboutDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            StringContent stringContent = new (jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PostAsync("https://localhost:7259/api/About", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -80,7 +80,7 @@ namespace SignalR.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateAboutDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            StringContent stringContent = new (jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PutAsync("https://localhost:7259/api/About/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {

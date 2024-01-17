@@ -42,6 +42,7 @@ namespace SignalR.Api.Controllers
                 Amount = createDiscountDto.Amount,  
                  Description = createDiscountDto.Description,   
                  ImageUrl = createDiscountDto.ImageUrl,
+                  Status = false
             });
 
             return Ok("indirimde ki ürünler Eklendi");
@@ -75,9 +76,29 @@ namespace SignalR.Api.Controllers
                  Description = updateDiscountDto.Description,   
                  ImageUrl = updateDiscountDto.ImageUrl,
                   DiscountID = updateDiscountDto.DiscountID,
-            });
+                 Status = false
+             });
             return Ok("İndirimde ki ürünler Güncellendi");
 
         }
+        [HttpGet("ChangeStatusToTrue/{id}")]
+        public async Task <IActionResult> ChangeStatusToTrue(int id)
+        {
+           _discountService.TChangeStatusToTrue(id);
+            return Ok("Ürün İndirimi Akrif Hale Getirildi");
+
+        }
+
+        [HttpGet("ChangeStatusToFalse/{id}")]
+        public async Task<IActionResult> ChangeStatusToFalse(int id)
+        {
+            _discountService.TChangeStatusToFalse(id);
+            return Ok("Ürün İndirimi Pasif Hale Getirildi");
+
+        }
+
+
+
+
     }
 }

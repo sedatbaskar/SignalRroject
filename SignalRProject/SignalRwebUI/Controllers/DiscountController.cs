@@ -39,7 +39,7 @@ namespace SignalR.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createDiscountDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            StringContent stringContent = new (jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PostAsync("https://localhost:7259/api/Discount", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -80,7 +80,7 @@ namespace SignalR.WebUI.Controllers
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateDiscountDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            StringContent stringContent = new (jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PutAsync("https://localhost:7259/api/Discount/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -89,6 +89,18 @@ namespace SignalR.WebUI.Controllers
             return View();
         }
 
+        public async Task<IActionResult> ChangeStatusToTrue(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            await client.GetAsync($"https://localhost:7259/api/Discount/ChangeStatusToTrue/{id}");
+            return RedirectToAction("Index");
+        }
 
+        public async Task<IActionResult> ChangeStatusToFalse(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            await client.GetAsync($"https://localhost:7259/api/Discount/ChangeStatusToFalse/{id}");
+            return RedirectToAction("Index");
+        }
     }
 }

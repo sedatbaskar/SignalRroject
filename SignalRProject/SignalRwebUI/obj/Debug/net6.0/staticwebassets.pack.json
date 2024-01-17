@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SignalR.WebUI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\SignalR.WebUI.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\Ready-Bootstrap-Dashboard-master\\LICENSE",
       "PackagePath": "staticwebassets\\Ready-Bootstrap-Dashboard-master"
     },

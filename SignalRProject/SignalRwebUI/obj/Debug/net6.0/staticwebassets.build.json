@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zYt8kPZCo5SsYL4i+GEFj5NMgeLMu/+C7fm0g7kGTik=",
+  "Hash": "KoXWkJC3t1kQpW0Mx2b+ypdra7haqna0X9zUjm5v9nk=",
   "Source": "SignalR.WebUI",
   "BasePath": "_content/SignalR.WebUI",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SignalR.WebUI.styles.css",
-      "SourceId": "SignalR.WebUI",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/SignalR.WebUI",
-      "RelativePath": "SignalR.WebUI.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SignalR.WebUI.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SignalR.WebUI.bundle.scp.css",
-      "SourceId": "SignalR.WebUI",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/SignalR.WebUI",
-      "RelativePath": "SignalR.WebUI.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SignalR.WebUI.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\sedat\\OneDrive\\Belgeler\\GitHub\\SignalRroject\\SignalRProject\\SignalRwebUI\\wwwroot\\colorlib-regform-32\\css\\nunito-font.css",
       "SourceId": "SignalR.WebUI",
