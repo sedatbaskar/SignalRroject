@@ -22,8 +22,4 @@
     <ProjectReference Include="..\SignalRDtoLayer\SignalR.DtoLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-
 </Project>

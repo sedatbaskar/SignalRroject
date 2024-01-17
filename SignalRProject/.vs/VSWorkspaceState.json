@@ -3,7 +3,7 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Booking",
+    "\\SignalRwebUI\\Views\\Contact",
     "\\SignalRwebUI\\Views\\Register",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
@@ -11,6 +11,5 @@
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\Booking\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
