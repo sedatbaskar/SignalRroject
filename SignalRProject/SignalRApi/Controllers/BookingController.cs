@@ -33,7 +33,7 @@ namespace SignalR.Api.Controllers
 
         {
 
-            Booking booking = new Booking()
+            Booking booking = new ()
 
             {
                 Mail = createBookingDto.Mail,
@@ -41,6 +41,7 @@ namespace SignalR.Api.Controllers
                 Name = createBookingDto.Name,
                 PersonCount = createBookingDto.PersonCount,
                 Phone = createBookingDto.Phone,
+                Description = createBookingDto.Description
 
 
             };
@@ -62,7 +63,7 @@ namespace SignalR.Api.Controllers
 
         public IActionResult UpdateBooking(UpdateBookingDto updateBookingDto)
         {
-            Booking booking = new Booking()
+            Booking booking = new ()
             {
                 Mail = updateBookingDto.Mail,
                 Date = updateBookingDto.Date,
@@ -70,12 +71,13 @@ namespace SignalR.Api.Controllers
                 PersonCount = updateBookingDto.PersonCount,
                 Phone = updateBookingDto.Phone,
                 BookingID = updateBookingDto.BookingID,
+                Description = updateBookingDto.Description
 
 
             };
 
             _bookingService.TUpdate(booking);
-            return Ok("Rezervaon güncellendi");
+            return Ok("Rezervazyon güncellendi");
         }
 
         [HttpGet("{id}")]
@@ -86,8 +88,21 @@ namespace SignalR.Api.Controllers
             return Ok(value);
         }
 
+        [HttpGet("BookingStatusApproved/{id}")]
+        public IActionResult BookingStatusApproved(int id)
+        {
+            _bookingService.TBookingStatusApproved(id);
+            return Ok("Rezervasyon Açıklaması Değiştirildi");
+        }
 
+        [HttpGet("BookingStatusCancelled/{id}")]
+        public IActionResult BookingStatusCancelled(int id)
+        {
+            _bookingService.TBookingStatusCancelled(id);
+            return Ok("Rezervasyon Açıklaması Değiştirildi");
+        }
 
+        
     }
 
 }

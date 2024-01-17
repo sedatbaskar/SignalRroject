@@ -16,3 +16,53 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Bu CSS stillerini mevcut stil dosyanýza ekleyin veya yeni bir stil dosyasý oluþturun */
+
+/* Temel stiller */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* Tablo stilleri */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+/* Buton stilleri */
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+

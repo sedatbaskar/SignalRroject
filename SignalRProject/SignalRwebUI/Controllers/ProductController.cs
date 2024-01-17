@@ -33,6 +33,7 @@ namespace SignalR.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> CreateProduct()
         {
+
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:7259/api/Category");
             var jsondata = await responseMessage.Content.ReadAsStringAsync();
@@ -81,6 +82,7 @@ namespace SignalR.WebUI.Controllers
         public async Task<IActionResult> UpdateProduct(int id)
         {
 
+
             var client1 = _httpClientFactory.CreateClient();
             var responseMessage1 = await client1.GetAsync("https://localhost:7259/api/Category");
             var jsondata1 = await responseMessage1.Content.ReadAsStringAsync();
@@ -96,7 +98,7 @@ namespace SignalR.WebUI.Controllers
 
             ViewBag.v = values2;
 
-      
+
 
 
 
@@ -120,6 +122,7 @@ namespace SignalR.WebUI.Controllers
 
         public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto)
         {
+            updateProductDto.ProductStatus = true;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateProductDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
