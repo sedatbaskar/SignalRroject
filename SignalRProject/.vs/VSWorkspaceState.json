@@ -3,13 +3,14 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Contact",
     "\\SignalRwebUI\\Views\\Register",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
     "\\SignalRwebUI\\Views\\SignalRDefault",
-    "\\SignalRwebUI\\Views\\Statistic"
+    "\\SignalRwebUI\\Views\\Statistic",
+    "\\SignalRwebUI\\Views\\Testimonial"
   ],
+  "SelectedNode": "\\SignalRwebUI\\Views\\Testimonial\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

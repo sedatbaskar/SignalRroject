@@ -73,6 +73,7 @@ namespace SignalR.WebUI.Controllers
             return View();
 
             //Hata çözülecek
+            //Hata çözüldü Api de güncelleme yapıyor
 
         }
         [HttpPost]

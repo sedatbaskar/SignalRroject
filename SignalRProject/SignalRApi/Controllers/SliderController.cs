@@ -71,16 +71,19 @@ namespace SignalR.Api.Controllers
 
         public IActionResult UpdateSlider(UpdateSliderDto  updateSliderDto)
         {
-            _sliderService.TAdd(new Slider()
+            Slider slider = new Slider()
             {
                 Description1 = updateSliderDto.Description1,
                 Description2 = updateSliderDto.Description2,
                 Description3 = updateSliderDto.Description3,
                 Title1 = updateSliderDto.Title1,
                 Title2 = updateSliderDto.Title2,
-                Title3 = updateSliderDto.Title3
+                Title3 = updateSliderDto.Title3,
+                 SliderID = updateSliderDto.SliderID
 
-            });
+
+            };
+            _sliderService.TUpdate(slider);
             return Ok("Önce çıkanlar Güncellendi");
 
         }
