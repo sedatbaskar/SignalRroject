@@ -3,7 +3,7 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\Register",
+    "\\SignalRwebUI\\Views\\Notifications",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
@@ -11,6 +11,6 @@
     "\\SignalRwebUI\\Views\\Statistic",
     "\\SignalRwebUI\\Views\\Testimonial"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\Testimonial\\Index.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Views\\Notifications\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

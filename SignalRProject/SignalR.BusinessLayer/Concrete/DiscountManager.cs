@@ -20,7 +20,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public void TAdd(Discount entity)
         {
-           _discountDal.Add(entity);
+            _discountDal.Add(entity);
         }
 
         public void TChangeStatusToFalse(int id)
@@ -40,7 +40,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public Discount TGetById(int id)
         {
-            return _discountDal.GetById(id);    
+            return _discountDal.GetById(id);
         }
 
         public List<Discount> TGetListAll()
@@ -48,9 +48,14 @@ namespace SignalR.BusinessLayer.Concrete
             return _discountDal.GetListAll();
         }
 
+        public List<Discount> TGetListByStatusTrue()
+        {
+            return _discountDal.GetListByStatusTrue();
+        }
+
         public void TUpdate(Discount entity)
         {
-           _discountDal.Update(entity);
+            _discountDal.Update(entity);
         }
     }
 }
