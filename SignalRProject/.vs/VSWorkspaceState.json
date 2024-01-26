@@ -3,14 +3,14 @@
     "",
     "\\SignalRwebUI",
     "\\SignalRwebUI\\Views",
-    "\\SignalRwebUI\\Views\\DefaultControllers",
     "\\SignalRwebUI\\Views\\Shared",
     "\\SignalRwebUI\\Views\\Shared\\Components",
     "\\SignalRwebUI\\Views\\Shared\\Components\\_LayoutSidebarPartialComponent",
+    "\\SignalRwebUI\\Views\\Shared\\Components\\_UILayoutSocialMediaComponentPartial",
     "\\SignalRwebUI\\Views\\SignalRDefault",
     "\\SignalRwebUI\\Views\\Statistic",
     "\\SignalRwebUI\\Views\\Testimonial"
   ],
-  "SelectedNode": "\\SignalRwebUI\\Views\\DefaultControllers\\SendMessage.cshtml",
+  "SelectedNode": "\\SignalRwebUI\\Views\\Shared\\Components\\_UILayoutSocialMediaComponentPartial\\Default.cshtml",
   "PreviewInSolutionExplorer": false
 }
